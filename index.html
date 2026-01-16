@@ -17,7 +17,7 @@
   .card {
     background: white;
     padding: 20px;
-    width: 300px;
+    width: 340px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   }
@@ -34,16 +34,29 @@
 
   li {
     background: #e8e8e8;
-    padding: 12px;
+    padding: 10px;
     margin-bottom: 8px;
     border-radius: 5px;
     cursor: grab;
     display: flex;
+    align-items: center;
     justify-content: space-between;
   }
 
   li.dragging {
     opacity: 0.4;
+  }
+
+  .drink {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
   }
 
   .rank {
@@ -56,12 +69,53 @@
 <div class="card">
   <h2>Ranka dina favoritdrycker</h2>
   <ul id="list">
-    <li draggable="true">Pepsi Max <span class="rank">1</span></li>
-    <li draggable="true">Cola Zero <span class="rank">2</span></li>
-    <li draggable="true">Cola Original <span class="rank">3</span></li>
-    <li draggable="true">Fanta Orange <span class="rank">4</span></li>
-    <li draggable="true">Sprite <span class="rank">5</span></li>
-    <li draggable="true">Fanta Exotic <span class="rank">6</span></li>
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Pepsi_logo_2014.svg">
+        Pepsi Max
+      </div>
+      <span class="rank">1</span>
+    </li>
+
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Coca-Cola_Zero_logo.svg">
+        Cola Zero
+      </div>
+      <span class="rank">2</span>
+    </li>
+
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Coca-Cola_logo.svg">
+        Cola Original
+      </div>
+      <span class="rank">3</span>
+    </li>
+
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fanta_logo.svg">
+        Fanta Orange
+      </div>
+      <span class="rank">4</span>
+    </li>
+
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Sprite_Logo.svg">
+        Sprite
+      </div>
+      <span class="rank">5</span>
+    </li>
+
+    <li draggable="true">
+      <div class="drink">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Fanta_logo.svg">
+        Fanta Exotic
+      </div>
+      <span class="rank">6</span>
+    </li>
   </ul>
 </div>
 
